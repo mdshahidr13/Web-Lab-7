@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalogue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Book Catalogue</h1>
+            <button class="fetchButton" id="fetchButton">Fetch Books</button>
+        </div>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search by title or author...">
+            <select id="sort">
+                <option value="title">Sort by Title</option>
+                <option value="author">Sort by Author</option>
+            </select>
+        </div>
+        <div id="booklist" class="booklist-container">
+            <div class="loading" id="loading">Loading . . .</div>
+        </div>
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; All rights reserved. Book Catalog</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
